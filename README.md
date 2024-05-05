@@ -13,4 +13,4 @@ This is a HTML code with Javascript to create a ad rotation for your preferred s
 
     ![image](https://github.com/YuuOrKillua/AdsLoopRotation/assets/81570526/3f8b88ac-20b5-4fb8-b9c9-d8f9f26a533b)
 
-   Example: "1stVideo.mp4", "otherThing.mp4", "etc.mp4"
+   Example: "../SRC/1stVideo.mp4", "../SRC/otherThing.mp4", "../SRC/etc.mp4"
