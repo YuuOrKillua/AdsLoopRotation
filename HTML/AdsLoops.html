@@ -3,18 +3,17 @@
     <head>
         <meta charset="UTF-8"/>
         <title>MultiScripting</title>
-        <link rel="stylesheet" href="../CSS/Ads.css">
+        <link rel="stylesheet" href="../CSS/AdsLoop.css">
     </head>
     <body>
         <div class="section">
             <div class="video-container" >
-                <video class="Myvideo" autoplay muted src="file:///C:/Users/barbo/Desktop/Codes/Fomynha/IMG/TOPSKIN.mp4" type="video/mp4">
+                <video class="Myvideo" autoplay muted src="1stSource.Extension" type="video/mp4">
                 </video>
             </div>
         </div>
         <script>
-            const Videos = ["file:///C:/Users/barbo/Desktop/Codes/Fomynha/IMG/TOPSKIN.mp4", "file:///C:/Users/barbo/Desktop/Codes/Fomynha/IMG/INSANE.mp4", 
-            "file:///C:/Users/barbo/Desktop/Codes/Fomynha/IMG/ST34.mp4"]
+            const Videos = [""]
             let x=1
             var video = document.getElementsByClassName('Myvideo')[0];
             video.onended = function() {
@@ -23,17 +22,13 @@
                 setTimeout(() => {
                     video.setAttribute('src', Videos[x])
                     video.style.display = "block"
-                    if (x<2) {
+                    if (x<Videos.length) {
                         x++
-                        if (x=>2) {
-                        video.setAttribute('width', '600')
-                        video.setAttribute('height', '600')
-                        }
                     }else{
                         x=0
                     }
                     video.play();
-                }, /*valor do tempo de pausa*/ 1000);
+                }, 1000);
             }
         </script>
     </body>
